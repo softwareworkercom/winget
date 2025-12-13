@@ -4,3 +4,18 @@ node_modules/
 # Ignore package.json and package-lock.json
 package.json
 package-lock.json
+
+# .NET build artifacts
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+*.vspscc
+*.vssscc
+.vs/
+.vscode/
+*.log

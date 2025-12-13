@@ -1,0 +1,49 @@
+{
+  "applications": [
+    {
+      "id": "Microsoft.VisualStudioCode",
+      "name": "Visual Studio Code",
+      "source": "winget",
+      "installOptions": {
+        "silent": true,
+        "acceptPackageAgreements": true
+      },
+      "description": "Install Visual Studio Code"
+    },
+    {
+      "id": "Git.Git",
+      "name": "Git",
+      "source": "winget",
+      "installOptions": {
+        "silent": true,
+        "acceptPackageAgreements": true
+      },
+      "description": "Install Git"
+    },
+    {
+      "id": "Microsoft.DotNet.SDK.9",
+      "name": ".NET SDK 9",
+      "source": "winget",
+      "installOptions": {
+        "silent": true,
+        "acceptPackageAgreements": true
+      },
+      "description": "Install .NET SDK 9"
+    },
+    {
+      "id": "Microsoft.PowerShell",
+      "name": "PowerShell",
+      "source": "winget",
+      "installOptions": {
+        "silent": true,
+        "acceptPackageAgreements": true
+      },
+      "description": "Install PowerShell"
+    }
+  ],
+  "configuration": {
+    "minOsVersion": "10.0.22631",
+    "enableDeveloperMode": true,
+    "logLevel": "Information"
+  }
+}

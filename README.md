@@ -12,6 +12,7 @@ If you find this project helpful, please give it a star 🌟
 ## Table of Contents
 
 - [Installation](#installation)
+- [WinGet Configuration Applier (C# Console App)](#winget-configuration-applier-c-console-app)
 - [What's Included](#whats-included)
 - [Documentation](#documentation)
 
@@ -25,6 +26,47 @@ if (Test-Path 'winget-config.yaml') { Remove-Item -Path 'winget-config.yaml' -Fo
 winget configure -f winget-config.yaml
 if (Test-Path 'post-install.ps1') { Remove-Item -Path 'post-install.ps1' -Force }; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/devexlead/onboarding-winget/refs/heads/main/post-install.ps1' -OutFile 'post-install.ps1' -Headers @{"Cache-Control"="no-cache"}; .\post-install.ps1
 ```
+
+## WinGet Configuration Applier (C# Console App)
+
+A C# console application that parses a JSON file containing application identifiers and installation options, then programmatically applies a WinGet configuration to perform unattended (silent) software installations.
+
+### Features
+
+- ✅ **JSON Configuration**: Define applications to install in a simple JSON format
+- ✅ **Validation**: Built-in configuration validation with detailed error messages
+- ✅ **Logging**: Comprehensive logging with configurable log levels
+- ✅ **Error Handling**: Robust error handling and failure reporting
+- ✅ **WinGet Integration**: Generates WinGet DSC YAML configuration and applies it programmatically
+- ✅ **Silent Installation**: Supports unattended installations
+
+### Quick Start
+
+1. Navigate to the `WinGetConfigApplier` directory
+2. Customize `apps-config.json` with your desired applications
+3. Run the application:
+
+```bash
+dotnet run
+```
+
+For detailed documentation, see [WinGetConfigApplier/README.md](WinGetConfigApplier/README.md)
+
+### Building
+
+```bash
+cd WinGetConfigApplier
+dotnet build -c Release
+```
+
+### Publishing a Standalone Executable
+
+```bash
+cd WinGetConfigApplier
+dotnet publish -c Release -r win-x64 --self-contained
+```
+
+The executable will be in `bin/Release/net9.0/win-x64/publish/`
 
 ## What's Included
 
