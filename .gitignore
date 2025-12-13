@@ -19,3 +19,7 @@ obj/
 .vs/
 .vscode/
 *.log
+
+# Generated WinGet configuration files
+WinGetConfigApplier/generated-*.yaml
+WinGetConfigApplier/*-output.yaml
