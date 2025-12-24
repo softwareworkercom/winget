@@ -82,8 +82,8 @@ properties:
       directives:
         description: Install RedisInsight
       settings:
-        id: XP8K1GHCB0F1R2
-        source: msstore
+        id: RedisInsight.RedisInsight
+        source: winget
     
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: noSqlWorkbenchPackage
