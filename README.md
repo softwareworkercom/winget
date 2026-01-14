@@ -1,8 +1,8 @@
 # Development Environment Setup with WinGet
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Contributors](https://img.shields.io/github/contributors/devexlead/onboarding-winget)
-[![Star this repo](https://img.shields.io/github/stars/devexlead/onboarding-winget?style=social)](https://github.com/devexlead/onboarding-winget/stargazers)
+![Contributors](https://img.shields.io/github/contributors/softwareworkercom/winget)
+[![Star this repo](https://img.shields.io/github/stars/softwareworkercom/winget?style=social)](https://github.com/softwareworkercom/winget/stargazers)
 
 If you find this project helpful, please give it a star 🌟
 
@@ -21,9 +21,9 @@ If you find this project helpful, please give it a star 🌟
 2. Run the following script
 
 ```powershell
-if (Test-Path 'winget-config.yaml') { Remove-Item -Path 'winget-config.yaml' -Force }; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/devexlead/onboarding-winget/refs/heads/main/winget-config.yaml' -OutFile 'winget-config.yaml' -Headers @{"Cache-Control"="no-cache"};
+if (Test-Path 'winget-config.yaml') { Remove-Item -Path 'winget-config.yaml' -Force }; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/softwareworkercom/winget/refs/heads/main/winget-config.yaml' -OutFile 'winget-config.yaml' -Headers @{"Cache-Control"="no-cache"};
 winget configure -f winget-config.yaml
-if (Test-Path 'post-install.ps1') { Remove-Item -Path 'post-install.ps1' -Force }; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/devexlead/onboarding-winget/refs/heads/main/post-install.ps1' -OutFile 'post-install.ps1' -Headers @{"Cache-Control"="no-cache"}; .\post-install.ps1
+if (Test-Path 'post-install.ps1') { Remove-Item -Path 'post-install.ps1' -Force }; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/softwareworkercom/winget/refs/heads/main/post-install.ps1' -OutFile 'post-install.ps1' -Headers @{"Cache-Control"="no-cache"}; .\post-install.ps1
 ```
 
 ## What's Included
