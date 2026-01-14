@@ -130,8 +130,12 @@ wsl --install -d Ubuntu
 ################################################################################################################################################
 Write-Host "Configure WSL settings"
 
-Copy-Item -Path ".\.wslconfig" `
-          -Destination "$env:USERPROFILE\.wslconfig" `
-          -Force `
-          -Verbose
+if (Test-Path ".\.wslconfig") {
+    Copy-Item -Path ".\.wslconfig" `
+              -Destination "$env:USERPROFILE\.wslconfig" `
+              -Force `
+              -Verbose
+} else {
+    Write-Warning ".wslconfig file not found in current directory"
+}
 ################################################################################################################################################
