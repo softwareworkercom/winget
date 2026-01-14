@@ -39,22 +39,23 @@ Here’s the list of applications that will be installed (based on the `winget-c
 7. **Redis Insight**  
 8. **Amazon NoSQL Workbench**  
 9. **Microsoft SQL Server Management Studio (SSMS)**
-10. **Docker Desktop**
-11. **Obsidian**
-12. **ShareX**
-13. **Nuget CLI**
-14. **TreeSize**
-15. **WinMerge**
-16. **PowerShell**
-17. **JanDeDobbeleer.OhMyPosh**
-18. **7Zip**
-19. **GIMP**
-20. **Microsoft.Sysinternals**
-21. **Microsoft DevTunnels**
-22. **Microsoft DevProxy**
-23. **Mozilla Firefox**
-24. **JetBrains WebStorm**
-25. **Windows Terminal**
+10. **Microsoft SqlPackage**
+11. **Docker Desktop**
+12. **Obsidian**
+13. **ShareX**
+14. **Nuget CLI**
+15. **TreeSize**
+16. **WinMerge**
+17. **PowerShell**
+18. **JanDeDobbeleer.OhMyPosh**
+19. **7Zip**
+20. **GIMP**
+21. **Microsoft.Sysinternals**
+22. **Microsoft DevTunnels**
+23. **Microsoft DevProxy**
+24. **Mozilla Firefox**
+25. **JetBrains WebStorm**
+26. **Windows Terminal**
 
 Here’s the list of applications that will be installed (based on the `post-install.ps1`):
 
