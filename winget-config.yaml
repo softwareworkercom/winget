@@ -102,6 +102,15 @@ properties:
         source: winget
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: sqlPackagePackage
+      directives:
+        description: Install Microsoft SqlPackage
+        allowPrerelease: false
+      settings:
+        id: Microsoft.SqlPackage
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: dockerDesktopPackage
       directives:
         description: Install Docker Desktop
