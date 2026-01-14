@@ -19,6 +19,9 @@ dotnet tool update --global microsoft.dataapibuilder
 dotnet tool update -g microsoft.sqlpackage # Required to generate DACPAC files
 dotnet tool update -g dotnet-stryker # https://stryker-mutator.io/docs/stryker-net/introduction/
 
+# Install .NET Templates
+dotnet new install Microsoft.Build.Sql.Templates
+
 ################################################################################################################################################
 
 # Install VSCode Extensions
