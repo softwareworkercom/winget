@@ -111,11 +111,11 @@ Copy-Item -Path ".\settings.json" `
 # Import Visual Studio Workloads
 ################################################################################################################################################
 Write-Host "Download vs_community.exe to $outFilePath."
-$downloadUrl = "https://aka.ms/vs/17/release/vs_community.exe"
+$downloadUrl = "https://aka.ms/vs/18/release/vs_community.exe"
 $outFilePath = ".\vs_community.exe"
 Invoke-WebRequest -Uri $downloadUrl -OutFile $outFilePath -UseBasicParsing
 
-Write-Host "Import Visual Studio 2022 Configuration"
+Write-Host "Import Visual Studio 2026 Configuration"
 .\vs_community.exe --config ".\workloads.vsconfig" --passive --norestart
 ################################################################################################################################################
 

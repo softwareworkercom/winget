@@ -30,9 +30,9 @@ if (Test-Path 'post-install.ps1') { Remove-Item -Path 'post-install.ps1' -Force 
 
 Here’s the list of applications that will be installed (based on the `winget-config.yaml`):
 
-1. **Visual Studio 2022 Community**  
+1. **Visual Studio 2026 Community**  
 2. **Visual Studio Code**  
-3. **.NET Core 9 SDK**  
+3. **.NET Core 10 SDK**  
 4. **Git**  
 5. **GitHub Desktop**  
 6. **NVM for Windows**  
@@ -40,7 +40,7 @@ Here’s the list of applications that will be installed (based on the `winget-c
 8. **Amazon NoSQL Workbench**  
 9. **Microsoft SQL Server Management Studio (SSMS)**
 10. **Microsoft SqlPackage**
-11. **Docker Desktop**
+11. **Podman Desktop**
 12. **Obsidian**
 13. **ShareX**
 14. **Nuget CLI**
