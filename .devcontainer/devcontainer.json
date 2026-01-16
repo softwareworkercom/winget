@@ -73,7 +73,7 @@
     }
   },
 
-  "postCreateCommand": "bash -c 'npm install -g @angular/cli vite && dotnet tool install --global dotnet-ef && dotnet tool install --global microsoft.dataapibuilder && dotnet tool install --global microsoft.sqlpackage && dotnet tool install --global dotnet-stryker'",
+  "postCreateCommand": "bash -c 'npm install -g @angular/cli vite && dotnet tool install --global dotnet-ef && dotnet tool install --global microsoft.dataapibuilder && dotnet tool install --global microsoft.sqlpackage && dotnet tool install --global dotnet-stryker && dotnet tool install --global sw'",
 
   "forwardPorts": [
     3000,

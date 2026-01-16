@@ -46,6 +46,7 @@ After container creation, these are automatically installed:
 - **Data API Builder** - Microsoft Data API builder
 - **SqlPackage** - SQL Server deployment tool
 - **Stryker** - Mutation testing tool
+- **sw** - Software CLI tool
 
 ### VS Code Extensions (30+ extensions)
 All extensions from `post-install.ps1` are pre-installed:
@@ -150,7 +151,7 @@ kubectl version --client
 
 # Check global .NET tools
 dotnet tool list --global
-# Should list: dotnet-ef, microsoft.dataapibuilder, microsoft.sqlpackage, dotnet-stryker
+# Should list: dotnet-ef, microsoft.dataapibuilder, microsoft.sqlpackage, dotnet-stryker, sw
 
 # Check global npm packages
 npm list -g --depth=0
