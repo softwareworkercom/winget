@@ -125,3 +125,17 @@ dism /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 wsl --install
 wsl --set-default-version 2
 wsl --install -d Ubuntu
+
+# WSL Configuration
+################################################################################################################################################
+Write-Host "Configure WSL settings"
+
+if (Test-Path ".\.wslconfig") {
+    Copy-Item -Path ".\.wslconfig" `
+              -Destination "$env:USERPROFILE\.wslconfig" `
+              -Force `
+              -Verbose
+} else {
+    Write-Warning ".wslconfig file not found in current directory"
+}
+################################################################################################################################################
