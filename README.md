@@ -23,6 +23,7 @@ If you find this project helpful, please give it a star 🌟
 ```powershell
 if (Test-Path 'winget-config.yaml') { Remove-Item -Path 'winget-config.yaml' -Force }; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/softwareworkercom/winget/refs/heads/main/winget-config.yaml' -OutFile 'winget-config.yaml' -Headers @{"Cache-Control"="no-cache"};
 winget configure -f winget-config.yaml
+if (Test-Path '.wslconfig') { Remove-Item -Path '.wslconfig' -Force }; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/softwareworkercom/winget/refs/heads/main/.wslconfig' -OutFile '.wslconfig' -Headers @{"Cache-Control"="no-cache"};
 if (Test-Path 'post-install.ps1') { Remove-Item -Path 'post-install.ps1' -Force }; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/softwareworkercom/winget/refs/heads/main/post-install.ps1' -OutFile 'post-install.ps1' -Headers @{"Cache-Control"="no-cache"}; .\post-install.ps1
 ```
 
@@ -30,9 +31,9 @@ if (Test-Path 'post-install.ps1') { Remove-Item -Path 'post-install.ps1' -Force 
 
 Here’s the list of applications that will be installed (based on the `winget-config.yaml`):
 
-1. **Visual Studio 2022 Community**  
+1. **Visual Studio 2026 Community**  
 2. **Visual Studio Code**  
-3. **.NET Core 9 SDK**  
+3. **.NET Core 10 SDK**  
 4. **Git**  
 5. **GitHub Desktop**  
 6. **NVM for Windows**  
@@ -40,7 +41,7 @@ Here’s the list of applications that will be installed (based on the `winget-c
 8. **Amazon NoSQL Workbench**  
 9. **Microsoft SQL Server Management Studio (SSMS)**
 10. **Microsoft SqlPackage**
-11. **Docker Desktop**
+11. **Podman Desktop**
 12. **Obsidian**
 13. **ShareX**
 14. **Nuget CLI**
@@ -68,6 +69,11 @@ Here’s the list of applications that will be installed (based on the `post-ins
 7. **Internet Information Services (IIS)** (multiple features enabled, such as ASP.NET 4.5, CGI, WebSockets, etc.)  
 8. **PSReadLine**
 9. **Windows Subsystem for Linux (WSL) 2** with **Ubuntu**
+10. **WSL Configuration** - Configures WSL 2 with optimized settings:
+   - 8GB memory limit
+   - 4 CPU processors
+   - 4GB swap
+   - localhost forwarding enabled
   
 ## Documentation
 

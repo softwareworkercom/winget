@@ -1,0 +1,5 @@
+[wsl2]
+memory=8GB        # Limits VM memory
+processors=4      # Limits number of CPUs
+swap=4GB          # Swap file size used when memory limit is exceeded
+localhostForwarding=true  # Enables localhost forwarding between WSL and Windows

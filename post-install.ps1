@@ -114,11 +114,11 @@ Copy-Item -Path ".\settings.json" `
 # Import Visual Studio Workloads
 ################################################################################################################################################
 Write-Host "Download vs_community.exe to $outFilePath."
-$downloadUrl = "https://aka.ms/vs/17/release/vs_community.exe"
+$downloadUrl = "https://aka.ms/vs/18/release/vs_community.exe"
 $outFilePath = ".\vs_community.exe"
 Invoke-WebRequest -Uri $downloadUrl -OutFile $outFilePath -UseBasicParsing
 
-Write-Host "Import Visual Studio 2022 Configuration"
+Write-Host "Import Visual Studio 2026 Configuration"
 .\vs_community.exe --config ".\workloads.vsconfig" --passive --norestart
 ################################################################################################################################################
 
@@ -128,3 +128,17 @@ dism /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 wsl --install
 wsl --set-default-version 2
 wsl --install -d Ubuntu
+
+# WSL Configuration
+################################################################################################################################################
+Write-Host "Configure WSL settings"
+
+if (Test-Path ".\.wslconfig") {
+    Copy-Item -Path ".\.wslconfig" `
+              -Destination "$env:USERPROFILE\.wslconfig" `
+              -Force `
+              -Verbose
+} else {
+    Write-Warning ".wslconfig file not found in current directory"
+}
+################################################################################################################################################

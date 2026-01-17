@@ -1,0 +1,122 @@
+{
+  "name": "WinGet Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:10.0",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts",
+      "nodeGypDependencies": true,
+      "installYarnUsingApt": true
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "dockerDashComposeVersion": "v2"
+    },
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/powershell:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+      "version": "latest",
+      "helm": "latest",
+      "minikube": "none"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscodeintellicode-csharp",
+        "ms-mssql.mssql",
+        "ms-mssql.sql-database-projects-vscode",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-wsl",
+        "AmazonWebServices.aws-toolkit-vscode",
+        "GitHub.copilot-chat",
+        "GitHub.vscode-pull-request-github",
+        "GitHub.vscode-github-actions",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "ms-playwright.playwright",
+        "ms-vscode.PowerShell",
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker",
+        "docker.docker",
+        "ms-vscode.vscode-speech",
+        "dbaeumer.vscode-eslint",
+        "DavidAnson.vscode-markdownlint",
+        "SonarSource.sonarlint-vscode",
+        "garrytrinder.dev-proxy-toolkit",
+        "Postman.postman-for-vscode",
+        "esbenp.prettier-vscode",
+        "burkeholland.simple-react-snippets",
+        "dsznajder.es7-react-js-snippets",
+        "ms-vsliveshare.vsliveshare",
+        "ms-edgedevtools.vscode-edge-devtools",
+        "pflannery.vscode-versionlens",
+        "usernamehw.errorlens",
+        "quicktype.quicktype",
+        "bierner.markdown-mermaid",
+        "ms-dotnettools.dotnet-interactive-vscode"
+      ]
+    }
+  },
+
+  "postCreateCommand": "bash -c 'npm install -g @angular/cli vite && dotnet tool install --global dotnet-ef && dotnet tool install --global microsoft.dataapibuilder && dotnet tool install --global microsoft.sqlpackage && dotnet tool install --global dotnet-stryker && dotnet tool install --global sw'",
+
+  "forwardPorts": [
+    3000,
+    4200,
+    5000,
+    5001,
+    8080,
+    8081
+  ],
+
+  "portsAttributes": {
+    "3000": {
+      "label": "React/Node.js",
+      "onAutoForward": "notify"
+    },
+    "4200": {
+      "label": "Angular",
+      "onAutoForward": "notify"
+    },
+    "5000": {
+      "label": ".NET HTTP",
+      "onAutoForward": "notify"
+    },
+    "5001": {
+      "label": ".NET HTTPS",
+      "onAutoForward": "notify"
+    },
+    "8080": {
+      "label": "Development Server",
+      "onAutoForward": "notify"
+    },
+    "8081": {
+      "label": "Development Server Alt",
+      "onAutoForward": "notify"
+    }
+  },
+
+  "remoteUser": "vscode",
+
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,readonly,type=bind,consistency=cached",
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gitconfig,target=/home/vscode/.gitconfig,readonly,type=bind,consistency=cached"
+  ]
+}

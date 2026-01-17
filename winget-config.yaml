@@ -20,10 +20,10 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: vsPackage
       directives:
-        description: Install Visual Studio 2022 Community
+        description: Install Visual Studio 2026 Community
         allowPrerelease: false
       settings:
-        id: Microsoft.VisualStudio.2022.Community
+        id: Microsoft.VisualStudio.2026.Community
         source: winget
         
     - resource: Microsoft.WinGet.DSC/WinGetPackage
@@ -45,12 +45,12 @@ properties:
         source: winget
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: dotnetCore9
+      id: dotnetCore10
       directives:
-        description: Install .NET Core 9 SDK
+        description: Install .NET Core 10 SDK
         allowPrerelease: false
       settings:
-        id: Microsoft.DotNet.SDK.9
+        id: Microsoft.DotNet.SDK.10
         source: winget
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
@@ -111,12 +111,12 @@ properties:
         source: winget
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: dockerDesktopPackage
+      id: podmanDesktopPackage
       directives:
-        description: Install Docker Desktop
+        description: Install Podman Desktop
         allowPrerelease: false
       settings:
-        id: Docker.DockerDesktop
+        id: RedHat.Podman-Desktop
         source: winget
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
