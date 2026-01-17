@@ -48,14 +48,15 @@ After container creation, these are automatically installed:
 - **Stryker** - Mutation testing tool
 - **sw** - Software CLI tool
 
-### VS Code Extensions (30+ extensions)
-All extensions from `post-install.ps1` are pre-installed:
+### VS Code Extensions (32+ extensions)
+All extensions from `post-install.ps1` are pre-installed, plus:
 - C# and .NET development tools
 - Database tools (MSSQL, SQL Database Projects)
 - GitHub Copilot and PR tools
-- Docker and Kubernetes tools
+- Docker and Kubernetes tools (including Docker DX)
 - Linting, formatting, and debugging tools
 - React and Angular snippets
+- Accessibility tools (VS Code Speech)
 - And many more...
 
 ### Port Forwarding
