@@ -68,7 +68,7 @@ Here’s the list of applications that will be installed (based on the `post-ins
 6. **Visual Studio Code Extensions** (including C#, MSSQL, Remote Containers, Remote WSL, AWS Toolkit, GitHub Copilot Chat, Kubernetes Tools, Playwright, PowerShell, and Postman)  
 7. **Internet Information Services (IIS)** (multiple features enabled, such as ASP.NET 4.5, CGI, WebSockets, etc.)  
 8. **PSReadLine**
-9. **Windows Subsystem for Linux (WSL) 2) with **Ubuntu**
+9. **Windows Subsystem for Linux (WSL 2)** with **Ubuntu**
 10. **WSL Configuration** - Configures WSL 2 with optimized settings:
    - 8GB memory limit
    - 4 CPU processors
