@@ -18,6 +18,7 @@ dotnet tool update --global dotnet-ef
 dotnet tool update --global microsoft.dataapibuilder
 dotnet tool update -g microsoft.sqlpackage # Required to generate DACPAC files
 dotnet tool update -g dotnet-stryker # https://stryker-mutator.io/docs/stryker-net/introduction/
+dotnet tool update -g Microsoft.OpenApi.Kiota # https://learn.microsoft.com/en-us/openapi/kiota/install
 
 # Install .NET Templates
 dotnet new install Microsoft.Build.Sql.Templates

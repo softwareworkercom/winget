@@ -62,13 +62,19 @@ Here’s the list of applications that will be installed (based on the `post-ins
 
 1. **Node.js (LTS)** via NVM  
 2. **Angular CLI**  
-3. **React CLI**  
-4. **.NET Tools** (including Entity Framework Core, Data API Builder, SqlPackage, Stryker)
-5. **.NET Templates** (including Microsoft.Build.Sql.Templates for SQL Database Projects)
+3. **React CLI**
+4. **.NET Tools**:
+   - **Entity Framework Core CLI** (dotnet-ef)
+   - **Data API Builder** (microsoft.dataapibuilder)
+   - **SqlPackage** (microsoft.sqlpackage)
+   - **Stryker.NET** (dotnet-stryker)
+   - **Kiota** (Microsoft.OpenApi.Kiota)
+5. **.NET Templates**:
+   - **Microsoft.Build.Sql.Templates** - Templates for SQL Database Projects
 6. **Visual Studio Code Extensions** (including C#, MSSQL, Remote Containers, Remote WSL, AWS Toolkit, GitHub Copilot Chat, Kubernetes Tools, Playwright, PowerShell, and Postman)  
 7. **Internet Information Services (IIS)** (multiple features enabled, such as ASP.NET 4.5, CGI, WebSockets, etc.)  
 8. **PSReadLine**
-9. **Windows Subsystem for Linux (WSL 2)** with **Ubuntu**
+9. **Windows Subsystem for Linux (WSL) 2** with **Ubuntu**
 10. **WSL Configuration** - Configures WSL 2 with optimized settings:
    - 8GB memory limit
    - 4 CPU processors
