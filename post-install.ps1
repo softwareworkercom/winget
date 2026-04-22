@@ -34,6 +34,7 @@ code --install-extension AmazonWebServices.aws-toolkit-vscode
 code --install-extension GitHub.copilot-chat
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension GitHub.vscode-github-actions
+code --install-extension Anthropic.claude-code
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-playwright.playwright
 code --install-extension ms-vscode.PowerShell
@@ -95,6 +96,7 @@ dism /online /enable-feature /featurename:IIS-WebSockets /all /norestart
 # PSReadLine
 ################################################################################################################################################
 Install-Module PSReadLine -Force; 
+Install-Module PSMux -Force;
 New-Item -Path $PROFILE -ItemType File -Force
 Add-Content -Path $PROFILE -Value "Set-PSReadLineOption -PredictionViewStyle ListView -PredictionSource History -HistoryNoDuplicates -MaximumHistoryCount 10000"
 ################################################################################################################################################

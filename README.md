@@ -69,9 +69,9 @@ Here’s the list of applications that will be installed (based on the `post-ins
    - **SqlPackage** (microsoft.sqlpackage)
    - **Stryker.NET** (dotnet-stryker)
    - **Kiota** (Microsoft.OpenApi.Kiota)
-5. **Visual Studio Code Extensions** (including C#, MSSQL, Remote Containers, Remote WSL, AWS Toolkit, GitHub Copilot Chat, Kubernetes Tools, Playwright, PowerShell, and Postman)  
+5. **Visual Studio Code Extensions** (including C#, MSSQL, Remote Containers, Remote WSL, AWS Toolkit, GitHub Copilot Chat, Claude, Kubernetes Tools, Playwright, PowerShell, and Postman)  
 6. **Internet Information Services (IIS)** (multiple features enabled, such as ASP.NET 4.5, CGI, WebSockets, etc.)  
-7. **PSReadLine**
+7. **PSReadLine** and **PSMux**
 8. **Windows Subsystem for Linux (WSL) 2** with **Ubuntu**
 9. **WSL Configuration** - Configures WSL 2 with optimized settings:
    - 8GB memory limit
