@@ -26,6 +26,7 @@ dotnet tool update -g Microsoft.OpenApi.Kiota # https://learn.microsoft.com/en-u
 code --install-extension ms-dotnettools.csharp
 code --install-extension ms-dotnettools.csdevkit
 code --install-extension ms-dotnettools.vscodeintellicode-csharp
+code --install-extension JetBrains.resharper-code
 code --install-extension ms-mssql.mssql
 code --install-extension ms-mssql.sql-database-projects-vscode
 code --install-extension ms-vscode-remote.remote-containers

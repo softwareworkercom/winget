@@ -41,6 +41,7 @@
         "ms-dotnettools.csharp",
         "ms-dotnettools.csdevkit",
         "ms-dotnettools.vscodeintellicode-csharp",
+        "JetBrains.resharper-code",
         "ms-mssql.mssql",
         "ms-mssql.sql-database-projects-vscode",
         "ms-vscode-remote.remote-containers",
